@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dxlib">
+      <UniqueIdentifier>{5839540F-C44D-7CC0-8DCF-1F20F9A278F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ini ファイル">
+      <UniqueIdentifier>{007F246F-EC77-43C1-15AA-2846010223CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シェーダー ファイル">
+      <UniqueIdentifier>{72C23295-5E7D-2241-0735-9B8BF3CE6CD1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シェーダー ファイル\Shader">
+      <UniqueIdentifier>{D87DB38C-4437-1E37-CD96-3811394FD4A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{822303BF-6E1D-2C11-578A-C2214323927D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game">
+      <UniqueIdentifier>{6BBE2A70-D7CB-5856-60B2-5441CCBE240D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Objects">
+      <UniqueIdentifier>{2498AB13-9051-16BE-19B1-30988569CC2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Scenes">
+      <UniqueIdentifier>{3B0933E3-2745-364D-9057-4E447CB2DE67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System">
+      <UniqueIdentifier>{56D08743-C2E8-6E6D-8B95-FE06F76C0307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System\Component">
+      <UniqueIdentifier>{388CA237-A41B-6422-AD17-453A19269F2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System\Debug">
+      <UniqueIdentifier>{4C43DE2C-B8FC-48D7-415C-63B1AD14FF46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System\Graphics">
+      <UniqueIdentifier>{5659D237-42AB-A927-2BCA-E63717BBC210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System\Input">
+      <UniqueIdentifier>{D5E83D2D-41A2-A8D7-CA01-C3B136BA5E47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System\Physics">
+      <UniqueIdentifier>{C8C9D581-348E-D471-FDF3-043C697770A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System\Utils">
+      <UniqueIdentifier>{363A1A2E-A2F3-84D8-2B53-9FB2970B3B48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{EF12EB51-5BD5-1EDC-A485-AD681087F7B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game">
+      <UniqueIdentifier>{F859A26A-E47F-6CD1-CDC5-F19CB98A919D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Objects">
+      <UniqueIdentifier>{B1701816-9DC2-EF05-86E1-2C1672D208EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Scenes">
+      <UniqueIdentifier>{2884F08D-9448-EF7D-5DAE-1F48C9318BB3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System">
+      <UniqueIdentifier>{238354BA-0FD4-3FFC-3838-2EBE24E8D265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System\Component">
+      <UniqueIdentifier>{45E3B2DE-314B-79AC-9AB6-8DC2863D9098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System\Debug">
+      <UniqueIdentifier>{D91B4B2F-C56D-221F-AE8C-5F2F9A7D3B08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System\Graphics">
+      <UniqueIdentifier>{C3827DA9-2F9D-E04A-78BF-F0DEE4180852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System\Input">
+      <UniqueIdentifier>{62C1AA2F-4E13-821F-3732-BF2F23239B08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System\Physics">
+      <UniqueIdentifier>{95F9DAD2-8176-CE15-AAF3-CE2996CF6AA9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System\Utils">
+      <UniqueIdentifier>{C3128730-AF64-5E20-9883-9B3084747709}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\data\Shader\dxlib_ps.h">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\data\Shader\dxlib_vs.h">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\data\Shader\dxlib_vs_model.h">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\data\Shader\shadow.h">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\DxCompileConfig.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\DxDataType.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\DxDataTypeWin.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\DxFunctionWin.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\DxLib.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\Effekseer.Modules.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\Effekseer.SIMD.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\Effekseer.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\EffekseerForDXLib.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\EffekseerRendererDX11.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dxlib\EffekseerRendererDX9.h">
+      <Filter>dxlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\GameMain.h">
+      <Filter>ヘッダー ファイル\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\Arrow.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\BombEnemy.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\Bullet.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\Camera.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\DropItem.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\EnemyBase.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\FastEnemy.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\Filter.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\Goal.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\Gun.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\NormalEnemy.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\Player.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\PlayerKick.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\TargetPoint.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\TitleCharacter.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Objects\ToughEnemy.h">
+      <Filter>ヘッダー ファイル\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Scenes\Game.h">
+      <Filter>ヘッダー ファイル\Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Scenes\Title.h">
+      <Filter>ヘッダー ファイル\Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Scenes\Tutorial.h">
+      <Filter>ヘッダー ファイル\Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Game\Shadowmap.h">
+      <Filter>ヘッダー ファイル\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Precompile.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Cereal.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\Component.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentAttachModel.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentCamera.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentCollision.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentCollisionCapsule.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentCollisionLine.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentCollisionModel.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentCollisionSphere.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentEffect.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentFilterFade.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentModel.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentObjectController.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentSequencer.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentSpringArm.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentTargetTracking.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Component\ComponentTransform.h">
+      <Filter>ヘッダー ファイル\System\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Debug\DebugCamera.h">
+      <Filter>ヘッダー ファイル\System\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\EaseCurve.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\FileWatcher.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Geometry.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Graphics\Animation.h">
+      <Filter>ヘッダー ファイル\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Graphics\Frustum.h">
+      <Filter>ヘッダー ファイル\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Graphics\Model.h">
+      <Filter>ヘッダー ファイル\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Graphics\ModelCache.h">
+      <Filter>ヘッダー ファイル\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Graphics\Render.h">
+      <Filter>ヘッダー ファイル\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Graphics\ResourceModel.h">
+      <Filter>ヘッダー ファイル\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Graphics\Shader.h">
+      <Filter>ヘッダー ファイル\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Graphics\Texture.h">
+      <Filter>ヘッダー ファイル\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\ImGui.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Input\InputKey.h">
+      <Filter>ヘッダー ファイル\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Input\InputMouse.h">
+      <Filter>ヘッダー ファイル\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Input\InputPad.h">
+      <Filter>ヘッダー ファイル\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\LightManager.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Object.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Physics\PhysicsCharacter.h">
+      <Filter>ヘッダー ファイル\System\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Physics\PhysicsEngine.h">
+      <Filter>ヘッダー ファイル\System\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Physics\PhysicsLayer.h">
+      <Filter>ヘッダー ファイル\System\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Physics\RigidBody.h">
+      <Filter>ヘッダー ファイル\System\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Physics\Shape.h">
+      <Filter>ヘッダー ファイル\System\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Priority.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\ProcTiming.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Scene.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\SceneSample.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Signals.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Status.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\SystemMain.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\TypeInfo.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Typedef.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Utils\HelperLib.h">
+      <Filter>ヘッダー ファイル\System\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Utils\IniFileLib.h">
+      <Filter>ヘッダー ファイル\System\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\Utils\raw_ptr.h">
+      <Filter>ヘッダー ファイル\System\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\System\VectorMath.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WinMain.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Game\GameMain.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\Arrow.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\BombEnemy.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\Bullet.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\Camera.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\DropItem.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\EnemyBase.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\FastEnemy.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\Goal.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\Gun.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\NormalEnemy.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\Player.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\PlayerKick.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\TargetPoint.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\TitleCharacter.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\ToughEnemy.cpp">
+      <Filter>ソース ファイル\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Scenes\Game.cpp">
+      <Filter>ソース ファイル\Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Scenes\Title.cpp">
+      <Filter>ソース ファイル\Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Scenes\Tutorial.cpp">
+      <Filter>ソース ファイル\Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Shadowmap.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Precompile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\Component.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentAttachModel.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentCamera.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentCollision.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentCollisionCapsule.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentCollisionLine.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentCollisionModel.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentCollisionSphere.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentEffect.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentFilterFade.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentModel.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentSequencer.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentSpringArm.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentTargetTracking.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\ComponentTransform.cpp">
+      <Filter>ソース ファイル\System\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Debug\DebugCamera.cpp">
+      <Filter>ソース ファイル\System\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\EaseCurve.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\FileWatcher.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Geometry.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Graphics\Animation.cpp">
+      <Filter>ソース ファイル\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Graphics\Frustum.cpp">
+      <Filter>ソース ファイル\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Graphics\Model.cpp">
+      <Filter>ソース ファイル\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Graphics\ModelCache.cpp">
+      <Filter>ソース ファイル\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Graphics\Render.cpp">
+      <Filter>ソース ファイル\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Graphics\ResourceModel.cpp">
+      <Filter>ソース ファイル\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Graphics\Shader.cpp">
+      <Filter>ソース ファイル\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Graphics\Texture.cpp">
+      <Filter>ソース ファイル\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\ImGui.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Input\InputKey.cpp">
+      <Filter>ソース ファイル\System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Input\InputMouse.cpp">
+      <Filter>ソース ファイル\System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Input\InputPad.cpp">
+      <Filter>ソース ファイル\System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\LightManager.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Object.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Physics\PhysicsCharacter.cpp">
+      <Filter>ソース ファイル\System\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Physics\PhysicsEngine.cpp">
+      <Filter>ソース ファイル\System\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Physics\PhysicsLayer.cpp">
+      <Filter>ソース ファイル\System\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Physics\RigidBody.cpp">
+      <Filter>ソース ファイル\System\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Physics\Shape.cpp">
+      <Filter>ソース ファイル\System\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\ProcTiming.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Scene.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\SceneSample.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\SystemMain.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\TypeInfo.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Utils\HelperLib.cpp">
+      <Filter>ソース ファイル\System\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Utils\IniFileLib.cpp">
+      <Filter>ソース ファイル\System\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\VectorMath.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WinMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Objects\Filter.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\data\Game.ini">
+      <Filter>ini ファイル</Filter>
+    </None>
+    <None Include="..\..\data\Shader\ps_3d_texture.fx">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </None>
+    <None Include="..\..\data\Shader\ps_distortion.fx">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </None>
+    <None Include="..\..\data\Shader\ps_filter_fade.fx">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </None>
+    <None Include="..\..\data\Shader\ps_gray.fx">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </None>
+    <None Include="..\..\data\Shader\ps_gray_vertex_diffuse.fx">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </None>
+    <None Include="..\..\data\Shader\ps_model.fx">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </None>
+    <None Include="..\..\data\Shader\ps_texture.fx">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </None>
+    <None Include="..\..\data\Shader\ps_tonemapping.fx">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </None>
+    <None Include="..\..\data\Shader\vs_3d.fx">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </None>
+    <None Include="..\..\data\Shader\vs_model.fx">
+      <Filter>シェーダー ファイル\Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

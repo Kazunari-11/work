@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{822303BF-6E1D-2C11-578A-C2214323927D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\backends">
+      <UniqueIdentifier>{ECAF2DBF-5893-3CFF-6196-6A3BCDF80250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{EF12EB51-5BD5-1EDC-A485-AD681087F7B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\backends">
+      <UniqueIdentifier>{F949F21B-E585-F585-4E98-0D7D3AF39DA0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\opensource\imgui\backends\imgui_impl_dx11.h">
+      <Filter>ヘッダー ファイル\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\imgui\backends\imgui_impl_dx9.h">
+      <Filter>ヘッダー ファイル\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\imgui\backends\imgui_impl_win32.h">
+      <Filter>ヘッダー ファイル\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\imgui\imconfig.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\imgui\imgui.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\imgui\imgui_internal.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\imgui\imstb_rectpack.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\imgui\imstb_textedit.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\imgui\imstb_truetype.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\opensource\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>ソース ファイル\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opensource\imgui\backends\imgui_impl_dx9.cpp">
+      <Filter>ソース ファイル\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opensource\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>ソース ファイル\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opensource\imgui\imgui.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opensource\imgui\imgui_demo.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opensource\imgui\imgui_draw.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opensource\imgui\imgui_tables.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\opensource\imgui\imgui_widgets.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

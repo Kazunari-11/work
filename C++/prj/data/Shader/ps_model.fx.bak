@@ -1,0 +1,42 @@
+//----------------------------------------------------------------------------
+//!	@file	ps_model.fx
+//!	@brief	MV1モデルピクセルシェーダー
+//----------------------------------------------------------------------------
+#include "dxlib_ps.h"
+
+//----------------------------------------------------------------------------
+// メイン関数
+//----------------------------------------------------------------------------
+PS_OUTPUT main(PS_INPUT_3D input)
+{
+	PS_OUTPUT	output;
+
+	float2	uv = input.uv0_;
+	float3	N = normalize(input.normal_);	// 法線
+
+	//------------------------------------------------------------
+	// 法線マップ
+	//------------------------------------------------------------
+	N = Normalmap(N, input.worldPosition_, uv);
+
+	//------------------------------------------------------------
+	// テクスチャカラーを読み込み
+	//------------------------------------------------------------
+	float4	textureColor = DiffuseTexture.Sample(DiffuseSampler, uv);
+
+	// アルファテスト
+	if (textureColor.a < 0.5) discard;
+
+	// 平行光源
+	// DIFFUSE
+	float3	L = normalize(float3(1, 1, -1));
+
+	float	diffuse = saturate(dot(N, L));
+
+	float4	color = textureColor;
+	color.rgb = color.rgb * saturate(diffuse + 0.5);
+
+	output.color0_ = color * input.diffuse_;
+	// 出力パラメータを返す
+	return output;
+}

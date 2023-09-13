@@ -1,0 +1,44 @@
+//----------------------------------------------------------------------------
+//!	@file	ps_texture.fx
+//!	@brief	テクスチャありピクセルシェーダー
+//----------------------------------------------------------------------------
+#include "dxlib_ps.h"
+
+cbuffer FadeInfo : register(b5)
+{
+	float4	center_position_;	// [xyz_] オブジェクトの中心位置
+	float	nega_radius;		// 半径
+	float	gray_radius;		// 半径
+};
+
+//----------------------------------------------------------------------------
+// メイン関数
+//----------------------------------------------------------------------------
+PS_OUTPUT main(PS_INPUT_3D input)
+{
+	PS_OUTPUT	output;
+
+	float3	center_position = center_position_.xyz;
+
+	float3	world_position = input.worldPosition_;	// ピクセルのワールド座標
+
+	// 元の色
+	float4	color = DiffuseTexture.Sample(DiffuseSampler, input.uv0_);
+	color.rgb = saturate(color.rgb);
+
+	// 違う色にしたもの(色を反転させる)
+	if (length(center_position - world_position) < nega_radius) {
+		float4 change_color = color;
+		color.rgb = 1 - change_color.rgb;
+	}
+	// 違う色にしたもの(色を白黒に)
+	if (length(center_position - world_position) < gray_radius) {
+		float gray = color.r * 0.3f + color.g * 0.6f + color.b * 0.1f;
+		color.rgb = gray;
+	}
+
+	output.color0_ = color;
+
+// 出力パラメータを返す
+	return output;
+}

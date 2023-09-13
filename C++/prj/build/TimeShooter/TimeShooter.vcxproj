@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLTCG|x64">
+      <Configuration>ReleaseLTCG</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D88EF114-4444-6A0A-CD38-64E139ED600E}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TimeShooter</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTCG|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseLTCG|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>exe\x64\Debug\</OutDir>
+    <IntDir>obj\x64\Debug\</IntDir>
+    <TargetName>TimeShooter</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>exe\x64\Release\</OutDir>
+    <IntDir>obj\x64\Release\</IntDir>
+    <TargetName>TimeShooter</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTCG|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>exe\x64\ReleaseLTCG\</OutDir>
+    <IntDir>obj\x64\ReleaseLTCG\</IntDir>
+    <TargetName>TimeShooter</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompile.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DisableSpecificWarnings>4324;4201;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PreprocessorDefinitions>WIN64;WIN32;_WIN32;_DEBUG;DEBUG;_WINDOWS;_DISABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;..\..\dxlib;..\..\opensource\imgui;..\..\opensource;..\..\opensource\cereal\include;..\..\opensource\JoltPhysics;..\..\src\Sample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>Precompile.h</ForcedIncludeFiles>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/permissive- /Zo %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\dxlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+      <AdditionalOptions>/IGNORE:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompile.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DisableSpecificWarnings>4324;4201;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PreprocessorDefinitions>WIN64;WIN32;_WIN32;_WINDOWS;NDEBUG;PROFILE;_DISABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;..\..\dxlib;..\..\opensource\imgui;..\..\opensource;..\..\opensource\cereal\include;..\..\opensource\JoltPhysics;..\..\src\Sample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>Precompile.h</ForcedIncludeFiles>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/permissive- /GT /Zo %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\dxlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+      <AdditionalOptions>/IGNORE:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTCG|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompile.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DisableSpecificWarnings>4324;4201;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PreprocessorDefinitions>WIN64;WIN32;_WIN32;_WINDOWS;NDEBUG;LTCG;_DISABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;..\..\dxlib;..\..\opensource\imgui;..\..\opensource;..\..\opensource\cereal\include;..\..\opensource\JoltPhysics;..\..\src\Sample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>Precompile.h</ForcedIncludeFiles>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/permissive- /GT %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\dxlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+      <AdditionalOptions>/IGNORE:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\data\Shader\dxlib_ps.h" />
+    <ClInclude Include="..\..\data\Shader\dxlib_vs.h" />
+    <ClInclude Include="..\..\data\Shader\dxlib_vs_model.h" />
+    <ClInclude Include="..\..\data\Shader\shadow.h" />
+    <ClInclude Include="..\..\dxlib\DxCompileConfig.h" />
+    <ClInclude Include="..\..\dxlib\DxDataType.h" />
+    <ClInclude Include="..\..\dxlib\DxDataTypeWin.h" />
+    <ClInclude Include="..\..\dxlib\DxFunctionWin.h" />
+    <ClInclude Include="..\..\dxlib\DxLib.h" />
+    <ClInclude Include="..\..\dxlib\Effekseer.Modules.h" />
+    <ClInclude Include="..\..\dxlib\Effekseer.SIMD.h" />
+    <ClInclude Include="..\..\dxlib\Effekseer.h" />
+    <ClInclude Include="..\..\dxlib\EffekseerForDXLib.h" />
+    <ClInclude Include="..\..\dxlib\EffekseerRendererDX11.h" />
+    <ClInclude Include="..\..\dxlib\EffekseerRendererDX9.h" />
+    <ClInclude Include="..\..\src\Game\GameMain.h" />
+    <ClInclude Include="..\..\src\Game\Objects\Arrow.h" />
+    <ClInclude Include="..\..\src\Game\Objects\BombEnemy.h" />
+    <ClInclude Include="..\..\src\Game\Objects\Bullet.h" />
+    <ClInclude Include="..\..\src\Game\Objects\Camera.h" />
+    <ClInclude Include="..\..\src\Game\Objects\DropItem.h" />
+    <ClInclude Include="..\..\src\Game\Objects\EnemyBase.h" />
+    <ClInclude Include="..\..\src\Game\Objects\FastEnemy.h" />
+    <ClInclude Include="..\..\src\Game\Objects\Filter.h" />
+    <ClInclude Include="..\..\src\Game\Objects\Goal.h" />
+    <ClInclude Include="..\..\src\Game\Objects\Gun.h" />
+    <ClInclude Include="..\..\src\Game\Objects\NormalEnemy.h" />
+    <ClInclude Include="..\..\src\Game\Objects\Player.h" />
+    <ClInclude Include="..\..\src\Game\Objects\PlayerKick.h" />
+    <ClInclude Include="..\..\src\Game\Objects\TargetPoint.h" />
+    <ClInclude Include="..\..\src\Game\Objects\TitleCharacter.h" />
+    <ClInclude Include="..\..\src\Game\Objects\ToughEnemy.h" />
+    <ClInclude Include="..\..\src\Game\Scenes\Game.h" />
+    <ClInclude Include="..\..\src\Game\Scenes\Title.h" />
+    <ClInclude Include="..\..\src\Game\Scenes\Tutorial.h" />
+    <ClInclude Include="..\..\src\Game\Shadowmap.h" />
+    <ClInclude Include="..\..\src\Precompile.h" />
+    <ClInclude Include="..\..\src\System\Cereal.h" />
+    <ClInclude Include="..\..\src\System\Component\Component.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentAttachModel.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentCamera.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentCollision.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentCollisionCapsule.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentCollisionLine.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentCollisionModel.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentCollisionSphere.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentEffect.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentFilterFade.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentModel.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentObjectController.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentSequencer.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentSpringArm.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentTargetTracking.h" />
+    <ClInclude Include="..\..\src\System\Component\ComponentTransform.h" />
+    <ClInclude Include="..\..\src\System\Debug\DebugCamera.h" />
+    <ClInclude Include="..\..\src\System\EaseCurve.h" />
+    <ClInclude Include="..\..\src\System\FileWatcher.h" />
+    <ClInclude Include="..\..\src\System\Geometry.h" />
+    <ClInclude Include="..\..\src\System\Graphics\Animation.h" />
+    <ClInclude Include="..\..\src\System\Graphics\Frustum.h" />
+    <ClInclude Include="..\..\src\System\Graphics\Model.h" />
+    <ClInclude Include="..\..\src\System\Graphics\ModelCache.h" />
+    <ClInclude Include="..\..\src\System\Graphics\Render.h" />
+    <ClInclude Include="..\..\src\System\Graphics\ResourceModel.h" />
+    <ClInclude Include="..\..\src\System\Graphics\Shader.h" />
+    <ClInclude Include="..\..\src\System\Graphics\Texture.h" />
+    <ClInclude Include="..\..\src\System\ImGui.h" />
+    <ClInclude Include="..\..\src\System\Input\InputKey.h" />
+    <ClInclude Include="..\..\src\System\Input\InputMouse.h" />
+    <ClInclude Include="..\..\src\System\Input\InputPad.h" />
+    <ClInclude Include="..\..\src\System\LightManager.h" />
+    <ClInclude Include="..\..\src\System\Object.h" />
+    <ClInclude Include="..\..\src\System\Physics\PhysicsCharacter.h" />
+    <ClInclude Include="..\..\src\System\Physics\PhysicsEngine.h" />
+    <ClInclude Include="..\..\src\System\Physics\PhysicsLayer.h" />
+    <ClInclude Include="..\..\src\System\Physics\RigidBody.h" />
+    <ClInclude Include="..\..\src\System\Physics\Shape.h" />
+    <ClInclude Include="..\..\src\System\Priority.h" />
+    <ClInclude Include="..\..\src\System\ProcTiming.h" />
+    <ClInclude Include="..\..\src\System\Scene.h" />
+    <ClInclude Include="..\..\src\System\SceneSample.h" />
+    <ClInclude Include="..\..\src\System\Signals.h" />
+    <ClInclude Include="..\..\src\System\Status.h" />
+    <ClInclude Include="..\..\src\System\SystemMain.h" />
+    <ClInclude Include="..\..\src\System\TypeInfo.h" />
+    <ClInclude Include="..\..\src\System\Typedef.h" />
+    <ClInclude Include="..\..\src\System\Utils\HelperLib.h" />
+    <ClInclude Include="..\..\src\System\Utils\IniFileLib.h" />
+    <ClInclude Include="..\..\src\System\Utils\raw_ptr.h" />
+    <ClInclude Include="..\..\src\System\VectorMath.h" />
+    <ClInclude Include="..\..\src\WinMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Game\GameMain.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\Arrow.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\BombEnemy.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\Bullet.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\Camera.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\DropItem.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\EnemyBase.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\FastEnemy.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\Filter.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\Goal.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\Gun.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\NormalEnemy.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\Player.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\PlayerKick.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\TargetPoint.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\TitleCharacter.cpp" />
+    <ClCompile Include="..\..\src\Game\Objects\ToughEnemy.cpp" />
+    <ClCompile Include="..\..\src\Game\Scenes\Game.cpp" />
+    <ClCompile Include="..\..\src\Game\Scenes\Title.cpp" />
+    <ClCompile Include="..\..\src\Game\Scenes\Tutorial.cpp" />
+    <ClCompile Include="..\..\src\Game\Shadowmap.cpp" />
+    <ClCompile Include="..\..\src\Precompile.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System\Component\Component.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentAttachModel.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentCamera.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentCollision.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentCollisionCapsule.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentCollisionLine.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentCollisionModel.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentCollisionSphere.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentEffect.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentFilterFade.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentModel.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentSequencer.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentSpringArm.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentTargetTracking.cpp" />
+    <ClCompile Include="..\..\src\System\Component\ComponentTransform.cpp" />
+    <ClCompile Include="..\..\src\System\Debug\DebugCamera.cpp" />
+    <ClCompile Include="..\..\src\System\EaseCurve.cpp" />
+    <ClCompile Include="..\..\src\System\FileWatcher.cpp" />
+    <ClCompile Include="..\..\src\System\Geometry.cpp" />
+    <ClCompile Include="..\..\src\System\Graphics\Animation.cpp" />
+    <ClCompile Include="..\..\src\System\Graphics\Frustum.cpp" />
+    <ClCompile Include="..\..\src\System\Graphics\Model.cpp" />
+    <ClCompile Include="..\..\src\System\Graphics\ModelCache.cpp" />
+    <ClCompile Include="..\..\src\System\Graphics\Render.cpp" />
+    <ClCompile Include="..\..\src\System\Graphics\ResourceModel.cpp" />
+    <ClCompile Include="..\..\src\System\Graphics\Shader.cpp" />
+    <ClCompile Include="..\..\src\System\Graphics\Texture.cpp" />
+    <ClCompile Include="..\..\src\System\ImGui.cpp" />
+    <ClCompile Include="..\..\src\System\Input\InputKey.cpp" />
+    <ClCompile Include="..\..\src\System\Input\InputMouse.cpp" />
+    <ClCompile Include="..\..\src\System\Input\InputPad.cpp" />
+    <ClCompile Include="..\..\src\System\LightManager.cpp" />
+    <ClCompile Include="..\..\src\System\Object.cpp" />
+    <ClCompile Include="..\..\src\System\Physics\PhysicsCharacter.cpp" />
+    <ClCompile Include="..\..\src\System\Physics\PhysicsEngine.cpp" />
+    <ClCompile Include="..\..\src\System\Physics\PhysicsLayer.cpp" />
+    <ClCompile Include="..\..\src\System\Physics\RigidBody.cpp" />
+    <ClCompile Include="..\..\src\System\Physics\Shape.cpp" />
+    <ClCompile Include="..\..\src\System\ProcTiming.cpp" />
+    <ClCompile Include="..\..\src\System\Scene.cpp" />
+    <ClCompile Include="..\..\src\System\SceneSample.cpp" />
+    <ClCompile Include="..\..\src\System\SystemMain.cpp" />
+    <ClCompile Include="..\..\src\System\TypeInfo.cpp" />
+    <ClCompile Include="..\..\src\System\Utils\HelperLib.cpp" />
+    <ClCompile Include="..\..\src\System\Utils\IniFileLib.cpp" />
+    <ClCompile Include="..\..\src\System\VectorMath.cpp" />
+    <ClCompile Include="..\..\src\WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\data\Game.ini" />
+    <None Include="..\..\data\Shader\ps_3d_texture.fx" />
+    <None Include="..\..\data\Shader\ps_distortion.fx" />
+    <None Include="..\..\data\Shader\ps_filter_fade.fx" />
+    <None Include="..\..\data\Shader\ps_gray.fx" />
+    <None Include="..\..\data\Shader\ps_gray_vertex_diffuse.fx" />
+    <None Include="..\..\data\Shader\ps_model.fx" />
+    <None Include="..\..\data\Shader\ps_texture.fx" />
+    <None Include="..\..\data\Shader\ps_tonemapping.fx" />
+    <None Include="..\..\data\Shader\vs_3d.fx" />
+    <None Include="..\..\data\Shader\vs_model.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImGui\ImGui.vcxproj">
+      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ImGuizmo\ImGuizmo.vcxproj">
+      <Project>{36FD234F-22CA-7E5A-4BE3-6C02370FB4E8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\implot\implot.vcxproj">
+      <Project>{5A62C004-4604-EBDA-2FBF-FE2E1B00722B}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\im-neo-sequencer\im-neo-sequencer.vcxproj">
+      <Project>{A2BDD53F-8EB6-F491-B7E8-D916A340D49D}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\JoltPhysics\JoltPhysics.vcxproj">
+      <Project>{812AB974-EDDF-316A-76D4-2B41E288286E}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\meshoptimizer\meshoptimizer.vcxproj">
+      <Project>{75046AD2-E1C4-E508-AAFF-2E86167F2AE5}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

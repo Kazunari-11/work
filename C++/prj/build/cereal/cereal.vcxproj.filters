@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="archives">
+      <UniqueIdentifier>{1A439836-0610-F341-2F29-E1E91B5528D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="details">
+      <UniqueIdentifier>{8B788209-F757-01A5-0070-8C7B6CCE6706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external">
+      <UniqueIdentifier>{2839F3DC-1406-4EE8-3D1F-3C90294B8376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\rapidxml">
+      <UniqueIdentifier>{D84C2BEA-4463-2980-8DDA-B4A1F92FFA07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types">
+      <UniqueIdentifier>{5A5E7610-C672-9EC1-8FF4-4121FBC79AF2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types\concepts">
+      <UniqueIdentifier>{A8CAD56A-9498-C970-7D2C-3A976999A5D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\access.hpp" />
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\archives\adapters.hpp">
+      <Filter>archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\archives\binary.hpp">
+      <Filter>archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\archives\json.hpp">
+      <Filter>archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\archives\portable_binary.hpp">
+      <Filter>archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\archives\xml.hpp">
+      <Filter>archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\cereal.hpp" />
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\details\helpers.hpp">
+      <Filter>details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\details\polymorphic_impl.hpp">
+      <Filter>details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\details\polymorphic_impl_fwd.hpp">
+      <Filter>details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\details\static_object.hpp">
+      <Filter>details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\details\traits.hpp">
+      <Filter>details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\details\util.hpp">
+      <Filter>details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\external\base64.hpp">
+      <Filter>external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\external\rapidxml\rapidxml.hpp">
+      <Filter>external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\external\rapidxml\rapidxml_iterators.hpp">
+      <Filter>external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\external\rapidxml\rapidxml_print.hpp">
+      <Filter>external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\external\rapidxml\rapidxml_utils.hpp">
+      <Filter>external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\macros.hpp" />
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\specialize.hpp" />
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\array.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\atomic.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\base_class.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\bitset.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\boost_variant.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\chrono.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\common.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\complex.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\concepts\pair_associative_container.hpp">
+      <Filter>types\concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\deque.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\forward_list.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\functional.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\list.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\map.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\memory.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\optional.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\polymorphic.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\queue.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\set.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\stack.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\string.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\tuple.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\unordered_map.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\unordered_set.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\utility.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\valarray.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\variant.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\types\vector.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opensource\cereal\include\cereal\version.hpp" />
+  </ItemGroup>
+</Project>
